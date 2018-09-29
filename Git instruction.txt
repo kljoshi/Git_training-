@@ -1,0 +1,39 @@
+Create new Repo
+- Git hub site create new repo
+- name the repo 
+- add description
+- make it public or private
+- you can add README file as well
+- you can also add gitingore file if you want
+
+Create a new repo on the command line 
+- touch README.md
+- git init
+- git add README.md
+- git commit -m "first commit"
+- git remore add origin git@github.com:kljoshi/<name_of_repo>.git
+- git push -u origin master
+
+Push an existing repo from command line
+- git remote add origin https://github.com/kljoshi/<name_of_repo>.git
+
+Step 2:
+Go to the repo in local machine using the path
+type in 
+- git remote (to check the links to the remote branch)
+
+to add a remote link use
+- git remote add <alias> <url>
+- for example:
+	git remote add origin https://github.com/kljoshi/<repo_name>.git
+
+To view more information on the remote link use 
+- git remote -v 
+Note : it will give you the link to fetch and push.
+
+Information is store in .git/config file 
+- cat .git/config
+
+If you want to remove the remote use 
+- git remote rm origin/<alias>
+
