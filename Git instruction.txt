@@ -53,6 +53,7 @@ To get the updated remote repo use
 - git fetch
 
 Real life workflow: 
+(Persion 1) :
 - git checkout master
 - git fetch
 - git merge origin/master
@@ -61,4 +62,25 @@ Real life workflow:
 - git commit -m "Add customer feedback form"
 - git fetch
 - git push -u origin feedback_from
+
+(Person 2):
+- git checkout master
+- git fetch 
+- git merge origin/master
+- git checkout -b feeadback_form origin/feedback_form
+- git log
+- git show 84b6adf0
+- git commit -am "Add tour selector to feeadback from"
+- git fetch 
+- git push
+
+(Person 1):
+- git fetch 
+- git log -p feedback_form..origin/feedback_form
+- git merge origin/feedback_form
+- git checkout master
+- git fetch 
+- git merge origin/master
+- git merge feedback_form
+- git push
 
