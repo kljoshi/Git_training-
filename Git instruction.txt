@@ -52,6 +52,9 @@ To clone a repo use
 To get the updated remote repo use 
 - git fetch
 
+To delete a remote branch us 
+- git push origin --delete <name_of_remote_branch>
+
 Real life workflow: 
 (Persion 1) :
 - git checkout master
