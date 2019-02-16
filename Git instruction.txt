@@ -6,13 +6,28 @@ Create new Repo
 - you can add README file as well
 - you can also add gitingore file if you want
 
-Create a new repo on the command line 
-- touch README.md
-- git init
-- git add README.md
-- git commit -m "first commit"
-- git remore add origin git@github.com:kljoshi/<name_of_repo>.git
-- git push -u origin master
+Create cloning a Repo to folder in your local device
+- Create a folder : example: "Git"
+- Open "Git Bash"
+- cd into "Git" folder
+- configure username and useremail
+	- git config --global user.name "kljoshi"
+	- git config --global user.email kapillaljoshi@gmail.com
+- clone the repo
+	- git clone https://github.com/kljoshi/Git_training-.git
+- "ls" to check the clone folder
+
+Steps to add new file in the repo
+- create a file inside the folder where you cloned the repo
+- type "git status" to check the status of the file
+- to add the file 
+	- git add <name_of_file>
+- type "git status" to check status again
+- now time to commit the file 
+	- git commit -m "type in commit message"
+- transfer the file to git account
+	- git push -u origin master 
+
 
 Push an existing repo from command line
 - git remote add origin https://github.com/kljoshi/<name_of_repo>.git
